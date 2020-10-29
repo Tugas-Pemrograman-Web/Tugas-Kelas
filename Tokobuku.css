@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  Background: 	#87CEFA ;
+  }
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    color: white;
+    height: 100%;
+    background: 	#4169E1;
+    transition: all 0.5s ease;
+  }
+  .sidebar header {
+    font-size: 40px;
+    color: white;
+  font-weight: bold;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+  }
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: brown;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 3px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 3px solid black;
+  }
+  ul li:hover a {
+    padding-left: 50px;
+  }
+  #check {
+    display: none;
+  }
+  label #menu,
+  label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+  }
+  label #menu {
+    left: 40px;
+    top: 30px;
+    font-size: 30px;
+    color: white;
+    padding: 7px 10px;
+    transition: all 0.5s;
+  }
+  label #cancel {
+    z-index: 1111;
+    left: -210px;
+    top: 25px;
+    font-size: 20px;
+    color: #ebeff1;
+    padding: 4px 9px;
+  }
+  #check:checked ~ .sidebar {
+    left: 0;
+  }
+  #check:checked ~ label #menu {
+    left: 250px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel {
+    left: 210px;
+    transition: all 0.5s;
+  }
+  #check:checked ~ section {
+    margin-left: 250px;
+  }
+  section {
+    transition: all 0.5s ease;
+  }
+  section nav {
+    background: #4169E1;
+    height: 60px;
+    width: 100%;
+  }
+  nav ul li {
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 30px;
+    font-weight: bold;
+    float: right;
+    background-color: #4169E1;
+  }
+  button {
+    border: none;
+    padding: 8px;
+    display: inline-block;
+    color: #F5F5F5;
+    background-color: 	#87CEFA;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .column {
+    width: 23%;
+    float: left;
+    padding: 0px 10px;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .card {
+    max-width: 350px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border: 40px;
+    padding-bottom: 10px;
+  }
+  
+    
