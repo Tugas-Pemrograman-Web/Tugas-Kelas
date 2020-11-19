@@ -1,0 +1,168 @@
+*{
+	margin: auto;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.header{
+	text-align: center;
+	background-color: aqua;
+	color : black; 
+  font-family: 'Coolday';
+  font-size: 60px;
+
+}
+.login{
+	text-align: right;
+  text-decoration:mintcream;
+	background-color: white;
+  height: 0px;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: 'Arial';
+  padding-right: 15px;
+  
+}
+
+body{
+	margin:0px;
+  padding: 0px;
+  padding-bottom: 15%;
+	font-family: sans-serif;
+	background-color: lightblue;
+  background-position: center;
+  position: relative;
+}
+
+.navbar{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+
+.html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      }
+
+.navbar ul{
+	list-style-type: none;
+	margin: auto;
+	padding: 0 20px;
+	position: relative;
+	overflow: auto;
+	width: 100%;
+	display: inline-table;
+	border:1px solid #555;
+	background: black;
+}
+.navbar li {
+	float: left;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  padding: 14px 26px;
+  text-decoration: none;
+  background-color: black;
+  text-align: center;
+  border-bottom: 0px solid #555;
+}
+.navbar li a:hover {
+  background-color: #555;
+  color: white;
+}
+.navbar li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar li a:hover, .dropdown:hover .dropbtn {
+  background-color:dimgrey;
+}
+
+.navbar li.dropdown {
+  display: inline-block;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flow-root;
+  text-align: left;
+}
+
+.navbar .dropdown-content a:hover {
+  background-color:rgb(255, 255, 255);
+  color: black;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: contents;
+}
+
+.footer{
+	  width: 100%;
+    background-color: lightslategray;
+    position: absolute;
+    bottom: 0;
+    
+  }
+
+  .footer li {
+    float: left;
+    padding: 30px 30px;
+    text-align: end;
+    bottom: 0;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border: 40px;
+    padding-bottom: 35px;
+  }
+
+  button {
+    border: none;
+    padding: 8px;
+    display: inline-block;
+    color: #F5F5F5;
+    background-color: 	#029bfa;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .column {
+    width: 23%;
+    float: left;
+    padding: 0px 10px;
+  }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
